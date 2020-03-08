@@ -444,7 +444,44 @@ template {
   margin-right: 45px;
 }
 
-/* line 8, C:/Users/ateis/Desktop/projects/repair-design/sass/style.sass */
+/* line 1, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
+.hero {
+  position: relative;
+  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+}
+
+/* line 5, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
+.hero__instagram {
+  max-width: 80px;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 11, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313;
+}
+
+/* line 16, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
+.instagram__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #E3B873;
+  transform: rotate(90deg);
+}
+
+/* line 21, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
+.title {
+  margin: 0;
+}
+
+/* line 9, C:/Users/ateis/Desktop/projects/repair-design/sass/style.sass */
 body {
   font-family: 'Futura Book', sans-serif;
   font-size: 14px;
