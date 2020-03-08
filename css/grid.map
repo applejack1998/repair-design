@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "grid.css",
+	"sources": [
+		"../sass/grid.sass"
+	],
+	"sourcesContent": [
+		".container {\n  max-width: 1256px;\n  margin: auto; }\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,UAAU,CAAC;EACT,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,IAAI;CAAG"
+}

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "variables.css",
+	"sources": [
+		"../sass/variables.sass"
+	],
+	"sourcesContent": [
+		"$dark: #131313;\n$primary: #E3B873;\n$light: #ffffff;\n"
+	],
+	"names": [],
+	"mappings": ""
+}
