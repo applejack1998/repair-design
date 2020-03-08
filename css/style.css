@@ -488,6 +488,11 @@ template {
 }
 
 /* line 9, C:/Users/ateis/Desktop/projects/repair-design/sass/style.sass */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 11, C:/Users/ateis/Desktop/projects/repair-design/sass/style.sass */
 body {
   font-family: 'Futura Book', sans-serif;
   font-size: 14px;
