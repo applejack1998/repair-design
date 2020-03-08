@@ -4,4 +4,12 @@
   margin: auto;
 }
 
+/* line 4, C:/Users/ateis/Desktop/projects/repair-design/sass/grid.sass */
+.block {
+  animation-name: show;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: reverse;
+}
+
 /*# sourceMappingURL=grid.css.map */

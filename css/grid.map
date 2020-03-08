@@ -5,8 +5,8 @@
 		"../sass/grid.sass"
 	],
 	"sourcesContent": [
-		".container {\n  max-width: 1256px;\n  margin: auto; }\n"
+		".container {\n  max-width: 1256px;\n  margin: auto; }\n.block {\n  animation-name: show;\n  animation-duration: 2s;\n  animation-delay: 1s;\n  animation-direction: reverse; }\n"
 	],
 	"names": [],
-	"mappings": ";AAAA,AAAA,UAAU,CAAC;EACT,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,IAAI;CAAG"
+	"mappings": ";AAAA,AAAA,UAAU,CAAC;EACT,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,IAAI;CAAG;;;AACjB,AAAA,MAAM,CAAC;EACL,cAAc,EAAE,IAAI;EACpB,kBAAkB,EAAE,EAAE;EACtB,eAAe,EAAE,EAAE;EACnB,mBAAmB,EAAE,OAAO;CAAG"
 }
