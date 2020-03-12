@@ -393,32 +393,14 @@ template {
 }
 
 /* line 3, C:/Users/ateis/Desktop/projects/repair-design/sass/_settings.sass */
-body {
-  font-family: 'Futura Book', sans-serif;
+html {
   font-size: 14px;
 }
 
-/* line 7, C:/Users/ateis/Desktop/projects/repair-design/sass/_settings.sass */
-.section-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Yeseva One', cursive;
-}
-
-/* line 11, C:/Users/ateis/Desktop/projects/repair-design/sass/_settings.sass */
-.section-title__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* line 15, C:/Users/ateis/Desktop/projects/repair-design/sass/_settings.sass */
-.section-title__image::before, .section-title__image::after {
-  content: '';
-  width: 32px;
-  height: 2px;
-  background-color: #E3B873;
-  margin: 0 10px;
+/* line 5, C:/Users/ateis/Desktop/projects/repair-design/sass/_settings.sass */
+body {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 1rem;
 }
 
 /* line 1, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
@@ -427,14 +409,15 @@ body {
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
+  font-size: 0.93rem;
 }
 
-/* line 6, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
+/* line 7, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
 .button:hover {
   cursor: pointer;
 }
 
-/* line 8, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
+/* line 9, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
 .button--primary {
   background-color: #E3B873;
   color: #ffffff;
@@ -442,12 +425,12 @@ body {
   transition: box-shadow 0.3s;
 }
 
-/* line 13, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
+/* line 14, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
 .button--primary:hover {
   box-shadow: none;
 }
 
-/* line 15, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
+/* line 16, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
 .button--outline {
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -490,7 +473,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 40px;
+  margin-right: 2.857rem;
   transition: color 0.2s;
 }
 
@@ -546,8 +529,8 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  min-width: 247px;
-  min-height: 97px;
+  min-width: 17.64rem;
+  min-height: 6.93rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -571,7 +554,7 @@ body {
 /* line 45, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
 .hero__text {
   color: #ffffff;
-  font-size: 22px;
+  font-size: 1.571rem;
   max-width: 500px;
 }
 
@@ -582,11 +565,12 @@ body {
 
 /* line 51, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
 .hero__content {
-  max-width: 670px;
+  max-width: 47.857rem;
   position: relative;
+  margin-left: 4.285rem;
 }
 
-/* line 54, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
+/* line 55, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
 .instagram {
   display: flex;
   justify-content: center;
@@ -594,7 +578,7 @@ body {
   background-color: #131313;
 }
 
-/* line 59, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
+/* line 60, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
 .instagram__link {
   display: flex;
   align-items: center;
@@ -604,7 +588,7 @@ body {
   transform: rotate(90deg);
 }
 
-/* line 66, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
+/* line 67, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
 .instagram__link::after {
   content: '';
   width: 50px;
@@ -613,18 +597,103 @@ body {
   margin-left: 8px;
 }
 
-/* line 72, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
+/* line 73, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
 .title {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 2.857rem;
   color: #ffffff;
 }
 
-/* line 78, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
+/* line 79, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_hero.sass */
 .title--primary {
   color: #E3B873;
+}
+
+/* line 2, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursive;
+}
+
+/* line 6, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
+.section-title__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 10, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
+.section-title__image::before, .section-title__image::after {
+  content: '';
+  width: 32px;
+  height: 2px;
+  background-color: #E3B873;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 2, C:/Users/ateis/Desktop/projects/repair-design/sass/_media.sass */
+  html {
+    font-size: 12px;
+  }
+  /* line 5, C:/Users/ateis/Desktop/projects/repair-design/sass/_media.sass */
+  .nav__item {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* line 8, C:/Users/ateis/Desktop/projects/repair-design/sass/_media.sass */
+  .nav {
+    display: none;
+  }
+  /* line 11, C:/Users/ateis/Desktop/projects/repair-design/sass/_media.sass */
+  .hero__instagram {
+    display: none;
+  }
+  /* line 13, C:/Users/ateis/Desktop/projects/repair-design/sass/_media.sass */
+  .hero__content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  /* line 17, C:/Users/ateis/Desktop/projects/repair-design/sass/_media.sass */
+  .contacts__phone {
+    margin-right: 0;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  /* line 21, C:/Users/ateis/Desktop/projects/repair-design/sass/_media.sass */
+  .contacts__button {
+    display: none;
+  }
+  /* line 23, C:/Users/ateis/Desktop/projects/repair-design/sass/_media.sass */
+  .contacts .title {
+    font-size: 1.64rem;
+  }
+  /* line 26, C:/Users/ateis/Desktop/projects/repair-design/sass/_media.sass */
+  .hero__scroll-down {
+    display: none;
+  }
+  /* line 28, C:/Users/ateis/Desktop/projects/repair-design/sass/_media.sass */
+  .hero__content {
+    max-width: 22.86rem;
+  }
+  /* line 30, C:/Users/ateis/Desktop/projects/repair-design/sass/_media.sass */
+  .hero__text {
+    font-size: 1.29rem;
+    margin-bottom: 2.28rem;
+  }
+  /* line 33, C:/Users/ateis/Desktop/projects/repair-design/sass/_media.sass */
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
