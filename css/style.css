@@ -751,6 +751,8 @@ body {
 
 /* line 1, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   display: flex;
   align-items: center;
@@ -765,7 +767,13 @@ body {
   background-color: rgba(19, 19, 19, 0.6);
 }
 
-/* line 14, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 16, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+.modal--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 19, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal__dialog {
   position: relative;
   min-width: 36.36rem;
@@ -774,20 +782,20 @@ body {
   color: #ffffff;
 }
 
-/* line 20, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 25, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal__close {
   position: absolute;
   right: 0;
   top: 0;
   width: 28px;
   height: 28px;
-  background: transparent url("../img/close-1.svg") no no-repeat center;
+  background: transparent url("../img/close-1.svg") no-repeat center;
   border: 0;
   margin: 12px;
   cursor: pointer;
 }
 
-/* line 30, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 35, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal__title {
   font-family: 'Yeseva one', cursive;
   font-size: 1.357rem;
@@ -796,43 +804,43 @@ body {
   margin-bottom: 2.428rem;
 }
 
-/* line 36, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 41, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal__form {
   display: flex;
   flex-direction: column;
 }
 
-/* line 39, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 44, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal__policy {
   margin-bottom: 2.7rem;
 }
 
-/* line 41, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 46, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal__input {
   margin-bottom: 3.428rem;
 }
 
-/* line 43, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 48, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal__input:last-of-type {
   margin-bottom: 1rem;
 }
 
-/* line 45, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 50, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal__button {
   align-self: flex-end;
 }
 
-/* line 47, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 52, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal .label {
   font-size: 1.07rem;
 }
 
-/* line 49, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 54, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal .label--light {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 51, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 56, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal .input {
   background-color: transparent;
   border: 0;
@@ -842,7 +850,7 @@ body {
   padding: 0.5rem 0;
 }
 
-/* line 58, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 63, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal .input::placeholder {
   color: #ffffff;
 }
