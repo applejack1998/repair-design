@@ -19,6 +19,7 @@ $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closelBtn = $('.modal__close');
+      
   modalBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
