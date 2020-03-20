@@ -562,7 +562,8 @@ img {
 
 /* line 12, C:/Users/ateis/Desktop/projects/repair-design/sass/_grid.sass */
 .col-50 {
-  flex-basis: 50%;
+  width: 50%;
+  height: auto;
 }
 
 /* line 1, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_header.sass */
@@ -749,19 +750,7 @@ img {
   margin-bottom: 1rem;
 }
 
-/* line 4, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_types.sass */
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-/* line 8, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_types.sass */
-.col {
-  flex-basis: 32%;
-}
-
-/* line 11, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_types.sass */
+/* line 5, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_types.sass */
 .card__text {
   position: relative;
   max-width: 23.6rem;
@@ -772,13 +761,13 @@ img {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
 
-/* line 19, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_types.sass */
+/* line 13, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_types.sass */
 .card__title {
   font-family: 'Yeseva one', cursive;
   font-size: 1.29rem;
 }
 
-/* line 22, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_types.sass */
+/* line 16, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_types.sass */
 .card__list {
   margin: 0;
   padding: 0 0 0 1rem;
@@ -788,7 +777,7 @@ img {
   margin-bottom: 2.5rem;
 }
 
-/* line 29, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_types.sass */
+/* line 23, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_types.sass */
 .card__pricetag {
   position: absolute;
   left: 0;
@@ -829,6 +818,70 @@ img {
 .project__section-title {
   margin-bottom: 1rem;
   margin-top: 8rem;
+}
+
+/* line 2, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_projects.sass */
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 5, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_projects.sass */
+.swiper-slide__text {
+  flex-basis: 50%;
+  margin-bottom: 2.42rem;
+  padding-bottom: 2rem;
+}
+
+/* line 9, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_projects.sass */
+.swiper-slide__heading {
+  font-size: 1.285rem;
+  line-height: 1.78rem;
+  font-family: 'Yeseva one', cursive;
+  color: #E3B873;
+  margin-bottom: 0.64rem;
+}
+
+/* line 17, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_projects.sass */
+.swiper-pagination-bullet {
+  background: rgba #ffffff, 0.3;
+}
+
+/* line 19, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_projects.sass */
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
+/* line 22, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_projects.sass */
+.swiper-button-prev, .swiper-button-next {
+  margin: 0;
+  bottom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px;
+}
+
+/* line 29, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_projects.sass */
+.swiper-button-prev::after, .swiper-button-next::after {
+  display: none;
+}
+
+/* line 31, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_projects.sass */
+.swiper-button-prev {
+  left: 0;
+  background: url("../img/arrow-back.svg") no-repeat center;
+}
+
+/* line 34, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_projects.sass */
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center;
+}
+
+/* line 37, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_projects.sass */
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: 0;
 }
 
 /* line 1, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
