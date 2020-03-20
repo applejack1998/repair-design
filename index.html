@@ -6,13 +6,14 @@
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animate.css">
   <title>Document</title>
 </head>
 <body>
 <header class="header">
   <div class="container">
     <div class="menu">
-      <div class="logo menu__logo">Repair Design Project</div>
+      <div class="logo menu__logo wow fadeInRight" >Repair Design Project</div>
       <nav class="nav menu__nav">
         <a href="#" class="nav__item">Главная</a>
         <a href="#" class="nav__item">Проекты</a>
@@ -38,14 +39,14 @@
     </div>
     <div class="container">
       <div class="hero__content">
-        <h1 class="title hero__title">Турецкий ремонт в &nbsp; <span class="title--primary"> Ростове-на-дону</span></h1>
+        <h1 class="title hero__title wow fadeInRight">Турецкий ремонт в &nbsp; <span class="title--primary"> Ростове-на-дону</span></h1>
         <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
         <button class="button hero__button button--primary" data-toggle="modal">Рассчитать стоимость</button>
         <button class="button hero__button button--outline">Отправить заявку</button>
       </div>
     </div>
     <!-- /.container -->
-    <a href="#" class="hero__scroll-down">листайте вниз</a>
+    <a href="#" class="hero__scroll-down wow pulse" data-wow-delay="3s" data-wow-duration="6s">листайте вниз</a>
  </section>
 
 
@@ -165,15 +166,42 @@
 
  <section class="section control">
    <div class="container">
-     <div class="section-title">
-       <h2 class="section-title__heading">Онлайн контроль</h2>
+     <div class="section-title control__section-title section-title--light">
+       <h2 class="section-title__heading wow fadeInRight">Онлайн контроль</h2>
        <!-- /.section-title__heading -->
-       <div class="section-title__image">
+       <div class="section-title__image wow fadeInRight">
          <img src="img/camera.svg" alt="камера"> 
        </div>
        <!-- /.section-title__image -->
      </div>
      <!-- /.section-title -->
+     <div class="control__video video">
+       <img src="./img/play.svg" alt="play icon" class="video__play">
+     </div>
+     <!-- /.control__video video -->
+     <p class="control__text">
+      На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
+     </p>
+     <form action="#" class="form control__form">
+        <div class="control__input-group">
+          <label for="user-name" class="label form__label control__label">Имя</label>
+          <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут">
+        </div>
+        <!-- /.input-group -->
+
+        <div class="control__input-group">
+          <label for="user-phone" class="label form__label control__label">Телефон</label>
+          <input type="tel" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона">
+        </div>
+        <!-- /.input-group -->
+
+        <button class="button button--primary control__button">Отправить заявку</button>
+        <div class="policy control__policy">
+          <input type="checkbox" class="policy__checkbox" name="policy-checkbox" id="policy-checkbox" checked>
+          <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
+        </div>
+        <!-- /.policy -->
+      </form>
    </div>
    <!-- /.container -->
  </section>
@@ -295,7 +323,7 @@
 <section class="section project">
  <div class="container">
    <div class="section-title project__section-title">
-     <h2 class="section-title__heading">Дизайн проект</h2>
+     <h2 class="section-title__heading wow bounce" data-wow-duration="5s" data-wow-delay="3s">Дизайн проект</h2>
      <!-- /.section-title__heading -->
      <div class="section-title__image">
        <img src="img/design-project.svg" alt="Дизайн проект"> 
@@ -436,6 +464,7 @@
 <!-- /.modal -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html> 
