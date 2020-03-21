@@ -533,9 +533,10 @@ img {
 .policy__label {
   display: flex;
   align-items: center;
+  font-size: 1.142rem;
 }
 
-/* line 31, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
+/* line 32, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
 .policy__label::before {
   content: '';
   width: 18px;
@@ -544,6 +545,21 @@ img {
   background-repeat: 1px;
   cursor: pointer;
   margin-right: 0.64rem;
+}
+
+/* line 40, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
+.policy__label--center {
+  justify-content: center;
+}
+
+/* line 43, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
+label.invalid {
+  color: tomato;
+}
+
+/* line 46, C:/Users/ateis/Desktop/projects/repair-design/sass/_interface.sass */
+input.invalid {
+  border-bottom: 1px solid tomato;
 }
 
 /* line 1, C:/Users/ateis/Desktop/projects/repair-design/sass/_grid.sass */
@@ -800,6 +816,12 @@ img {
 }
 
 /* line 36, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
+.control__input {
+  border: 0;
+  border-bottom: 1px solid #131313;
+}
+
+/* line 39, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
 .control__form {
   display: flex;
   justify-content: space-between;
@@ -808,30 +830,30 @@ img {
   margin: auto;
 }
 
-/* line 42, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
+/* line 45, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
 .control__input-group {
   display: flex;
   flex-direction: column;
   flex-basis: 30%;
 }
 
-/* line 46, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
+/* line 49, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
 .control__policy {
   flex-basis: 100%;
   margin-top: 1.2rem;
 }
 
-/* line 49, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
+/* line 52, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
 .control__policy-label {
   justify-content: center;
 }
 
-/* line 51, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
+/* line 54, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
 .control__button {
   padding: 1.2857rem 4.785rem;
 }
 
-/* line 54, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
+/* line 57, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_control.sass */
 .video__play {
   position: relative;
   margin: auto;
@@ -906,7 +928,12 @@ img {
   font-family: 'FuturaBookC';
 }
 
-/* line 21, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_project.sass */
+/* line 20, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_project.sass */
+.project {
+  margin-bottom: 30rem;
+}
+
+/* line 22, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_project.sass */
 .project__section-title {
   margin-bottom: 1rem;
   margin-top: 8rem;
@@ -981,6 +1008,81 @@ img {
   padding-bottom: 30rem;
 }
 
+/* line 1, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_footer.sass */
+.footer {
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
+  padding-top: 3rem;
+}
+
+/* line 4, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_footer.sass */
+.footer__wrap {
+  background-color: #181818;
+  max-width: 63.07rem;
+  margin: auto;
+  padding: 2.5rem;
+  margin-top: -20rem;
+  margin-bottom: 3.714rem;
+}
+
+/* line 11, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_footer.sass */
+.footer-title {
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  font-size: 1.428rem;
+  text-align: center;
+  margin-bottom: 3.214rem;
+  margin-top: 0;
+}
+
+/* line 19, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_footer.sass */
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 37.142rem;
+  margin: auto;
+}
+
+/* line 25, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_footer.sass */
+.footer__input {
+  padding-top: 0.3rem;
+  background: transparent;
+  border: 0;
+}
+
+/* line 29, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_footer.sass */
+.footer__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  margin-bottom: 3.2rem;
+}
+
+/* line 34, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_footer.sass */
+.footer__input-group--full-width {
+  flex-basis: 100%;
+  margin-bottom: 2rem;
+}
+
+/* line 37, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_footer.sass */
+.footer__policy {
+  flex-basis: 100%;
+  margin-bottom: 3.6rem;
+}
+
+/* line 40, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_footer.sass */
+.footer__button {
+  margin: auto;
+  padding: 1.285rem 4.785rem;
+}
+
+/* line 43, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_footer.sass */
+.footer__menu {
+  background: #131313;
+  padding: 4.285rem 0;
+}
+
 /* line 1, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal {
   opacity: 0;
@@ -1047,32 +1149,34 @@ img {
   margin-bottom: 2.7rem;
 }
 
-/* line 46, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
-.modal__input {
+/* line 47, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+.modal__input-group {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 3.428rem;
 }
 
-/* line 48, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 51, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal__input:last-of-type {
   margin-bottom: 1rem;
 }
 
-/* line 50, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 53, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal__button {
   align-self: flex-end;
 }
 
-/* line 52, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 55, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal .label {
   font-size: 1.07rem;
 }
 
-/* line 54, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 57, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal .label--light {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 56, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 59, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal .input {
   background-color: transparent;
   border: 0;
@@ -1082,7 +1186,7 @@ img {
   padding: 0.5rem 0;
 }
 
-/* line 63, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
+/* line 66, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal .input::placeholder {
   color: #ffffff;
 }
