@@ -1083,6 +1083,12 @@ input.invalid {
   padding: 4.285rem 0;
 }
 
+/* line 46, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_footer.sass */
+.footer__map {
+  margin-bottom: 4rem;
+  min-height: 465px;
+}
+
 /* line 1, C:/Users/ateis/Desktop/projects/repair-design/sass/templates/_modal.sass */
 .modal {
   opacity: 0;
