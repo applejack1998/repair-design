@@ -59,7 +59,7 @@ $(document).ready(function () {
       },
       userPhone: "required",
       // compound rule
-      userEmail: {
+      userEmail: { 
         required: true,
         email: true
       }
@@ -74,6 +74,18 @@ $(document).ready(function () {
         required: "Обязательно укажите email",
         email: "Введите в формате: name@domain.com"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена, мы свяжемся с вами через 15 минут');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        }
+      });
     }
   });
 
